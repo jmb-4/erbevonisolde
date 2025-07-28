@@ -11,35 +11,41 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav-links li {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+.nav-links a {
+    color: #1e90ff;
     text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e90ff;
+    text-align: center;
+    flex-grow: 1;
 }
 
 /* Hero Image Section */
@@ -66,12 +72,15 @@ nav ul li a {
 
 .cast-section h2 {
     margin-bottom: 20px;
+    color: #333;
 }
 
 .cast-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cast-member {
@@ -91,6 +100,7 @@ nav ul li a {
 .cast-member p {
     margin-top: 5px;
     font-size: 0.9rem;
+    color: #333;
 }
 
 /* Trailer Section */
@@ -100,16 +110,27 @@ nav ul li a {
 }
 
 .trailer-section h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.trailer-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 450px; /* 16:9 aspect ratio for placeholder */
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    border: 1px solid #ddd;
 }
 
 /* Copyright Disclaimer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: #1e90ff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
