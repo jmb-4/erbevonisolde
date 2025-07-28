@@ -1,146 +1,68 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erbe von Isolde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-links left">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cast">Cast</a></li>
+            </ul>
+            <div class="logo">Erbe von Isolde</div>
+            <ul class="nav-links right">
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1c2526;
-    color: #ffffff;
-}
+    <!-- Hero Image Section -->
+    <section id="home" class="hero">
+        <img src="hero-image.jpg" alt="Erbe von Isolde Hero Image">
+    </section>
 
-/* Navigation Bar */
-header {
-    background-color: #1c2526;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
+    <!-- Cast Section -->
+    <section id="cast" class="cast-section">
+        <h2>Staring:</h2>
+        <div class="cast-grid">
+            <div class="cast-member">
+                <img src="cast1.jpg" alt="Cast Member 1">
+                <p>L. S.</p>
+            </div>
+            <div class="cast-member">
+                <img src="cast2.jpg" alt="Cast Member 2">
+                <p>M. K.</p>
+            </div>
+            <div class="cast-member">
+                <img src="cast3.jpg" alt="Cast Member 3">
+                <p>J. R.</p>
+            </div>
+            <div class="cast-member">
+                <img src="cast4.jpg" alt="Cast Member 4">
+                <p>E. M.</p>
+            </div>
+            <div class="cast-member">
+                <img src="cast5.jpg" alt="Cast Member 5">
+                <p>R. T.</p>
+            </div>
+        </div>
+    </section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <!-- Trailer Section -->
+    <section id="trailer" class="trailer-section">
+        <h2>Trailer</h2>
+        <div class="trailer-placeholder"></div>
+    </section>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    flex-grow: 1;
-}
-
-/* Hero Image Section */
-.hero {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-}
-
-.hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Cast Section */
-.cast-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.cast-section h2 {
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.cast-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.cast-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cast-grid img {
-    width: 100%;
-    max-width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.cast-member p {
-    margin-top: 5px;
-    font-size: 0.9rem;
-    color: #ffffff;
-}
-
-/* Trailer Section */
-.trailer-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.trailer-section h2 {
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.trailer-placeholder {
-    width: 100%;
-    max-width: 800px;
-    height: 450px; /* 16:9 aspect ratio */
-    background-color: #2a3439;
-    margin: 0 auto;
-    border: 2px solid #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.trailer-placeholder p {
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-/* Copyright Disclaimer */
-footer {
-    background-color: #1c2526;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
-}
+    <!-- Copyright Disclaimer -->
+    <footer>
+        <p>&copy; 2025 Erbe von Isolde. All rights reserved.</p>
+    </footer>
+</body>
+</html>
