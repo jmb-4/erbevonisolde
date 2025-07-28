@@ -7,13 +7,15 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #1c2526;
+    color: #ffffff;
 }
 
 /* Navigation Bar */
 header {
-    background-color: #ffffff;
+    background-color: #1c2526;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -35,7 +37,7 @@ nav {
 }
 
 .nav-links a {
-    color: #1e90ff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -43,7 +45,7 @@ nav {
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #1e90ff;
+    color: #ffffff;
     text-align: center;
     flex-grow: 1;
 }
@@ -72,7 +74,7 @@ nav {
 
 .cast-section h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .cast-grid {
@@ -100,37 +102,45 @@ nav {
 .cast-member p {
     margin-top: 5px;
     font-size: 0.9rem;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Trailer Section */
 .trailer-section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .trailer-section h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .trailer-placeholder {
     width: 100%;
     max-width: 800px;
-    height: 450px; /* 16:9 aspect ratio for placeholder */
-    background-color: #f0f0f0;
+    height: 450px; /* 16:9 aspect ratio */
+    background-color: #2a3439;
     margin: 0 auto;
-    border: 1px solid #ddd;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer-placeholder p {
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
 /* Copyright Disclaimer */
 footer {
-    background-color: #ffffff;
-    color: #1e90ff;
+    background-color: #1c2526;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
