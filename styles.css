@@ -23,7 +23,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px; /* Increased padding */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -61,7 +61,18 @@ nav {
 .hero {
     position: relative;
     width: 100%;
-    padding-top: 66.67%; /* 3:2 aspect ratio (100 / (3/2) = 66.67%) */
+    padding-top: 66.67%; /* 3:2 aspect ratio */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Subtle black overlay */
+    z-index: 1;
 }
 
 .hero img {
@@ -71,6 +82,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
 /* Cast Section */
@@ -165,7 +177,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased font size */
     color: #F8F6ED; /* Off-white */
     text-align: center;
 }
@@ -175,7 +187,7 @@ footer {
     background-color: #1F3C1E; /* Dark Green */
     color: #F8F6ED; /* Off-white */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0; /* Increased padding */
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -184,7 +196,7 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        padding: 0 10px;
+        padding: 0 20px; /* Adjusted padding */
     }
 
     .nav-links {
@@ -215,7 +227,7 @@ footer {
 
     .cast-text {
         font-size: 0.9rem;
-        margin: 30px 0; /* Adjusted for mobile */
+        margin: 20px 0; /* Reduced for mobile */
     }
 
     .trailer-section {
@@ -227,7 +239,7 @@ footer {
     }
 
     .trailer-placeholder p {
-        font-size: 1rem;
+        font-size: 1.2rem; /* Adjusted for mobile */
     }
 }
 
@@ -245,11 +257,11 @@ footer {
     }
 
     .trailer-placeholder p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Adjusted for smaller screens */
     }
 
     .cast-text {
         font-size: 0.8rem;
-        margin: 20px 0; /* Adjusted for smaller screens */
+        margin: 15px 0; /* Further reduced */
     }
 }
