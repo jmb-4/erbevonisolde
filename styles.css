@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Special Elite', cursive;
-    background-color: #00008b;
-    color: #ffffff;
+    background-color: #1F3C1E; /* Dark Green */
+    color: #F8F6ED; /* Off-white */
 }
 
 /* Navigation Bar */
 header {
-    background-color: #00008b;
+    background-color: #1F3C1E; /* Dark Green */
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -39,15 +39,19 @@ nav {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
     text-decoration: none;
     font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #F1DA66; /* Soft Yellow */
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
     text-align: center;
     flex-grow: 1;
     padding: 5px 0;
@@ -57,7 +61,7 @@ nav {
 .hero {
     position: relative;
     width: 100%;
-    padding-top: 66.66% /*56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
 .hero img {
@@ -73,21 +77,28 @@ nav {
 .cast-section {
     padding: 20px;
     text-align: center;
-    background-color: #00008b;
+    background-color: #1F3C1E; /* Dark Green */
 }
 
 .cast-section h2 {
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
     font-size: 1.5rem;
 }
 
 .cast-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.top-row {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom-row {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .cast-member {
@@ -101,7 +112,7 @@ nav {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ffffff;
+    border: 2px solid #F1DA66; /* Soft Yellow */
     aspect-ratio: 1/1;
 }
 
@@ -115,19 +126,26 @@ nav {
 .cast-member p {
     margin-top: 5px;
     font-size: 0.8rem;
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
+}
+
+.cast-text {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #F1DA66; /* Soft Yellow */
+    text-align: center;
 }
 
 /* Trailer Section */
 .trailer-section {
     padding: 30px 15px;
     text-align: center;
-    background-color: #00008b;
+    background-color: #1F3C1E; /* Dark Green */
 }
 
 .trailer-section h2 {
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
     font-size: 1.5rem;
 }
 
@@ -136,9 +154,9 @@ nav {
     max-width: 800px;
     height: 0;
     padding-top: 56.25%; /* 16:9 aspect ratio */
-    background-color: #00008b;
+    background-color: #1F3C1E; /* Dark Green */
     margin: 20px auto;
-    border: 4px solid #ffffff;
+    border: 4px solid #F1DA66; /* Soft Yellow */
     position: relative;
 }
 
@@ -148,14 +166,14 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #F8F6ED; /* Off-white */
     text-align: center;
 }
 
 /* Copyright Disclaimer */
 footer {
-    background-color: #00008b;
-    color: #ffffff;
+    background-color: #1F3C1E; /* Dark Green */
+    color: #F8F6ED; /* Off-white */
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -182,9 +200,8 @@ footer {
         margin: 10px 0;
     }
 
-    .cast-grid {
+    .top-row, .bottom-row {
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-        gap: 10px;
     }
 
     .cast-grid img {
@@ -194,6 +211,11 @@ footer {
 
     .cast-member p {
         font-size: 0.7rem;
+    }
+
+    .cast-text {
+        font-size: 0.9rem;
+        margin: 15px 0;
     }
 
     .trailer-section {
@@ -224,5 +246,9 @@ footer {
 
     .trailer-placeholder p {
         font-size: 0.9rem;
+    }
+
+    .cast-text {
+        font-size: 0.8rem;
     }
 }
