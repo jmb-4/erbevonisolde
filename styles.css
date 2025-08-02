@@ -100,7 +100,7 @@ nav {
 }
 
 .bottom-row {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Adjusted to 3 columns */
 }
 
 .cast-member {
@@ -198,11 +198,6 @@ footer {
         margin: 5px 10px;
     }
 
-    .logo {
-        font-size: 1.5rem;
-        margin: 10px 0;
-    }
-
     .top-row, .bottom-row {
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     }
@@ -237,10 +232,6 @@ footer {
 @media (max-width: 480px) {
     .nav-links a {
         font-size: 0.9rem;
-    }
-
-    .logo {
-        font-size: 1.2rem;
     }
 
     .cast-section h2, .trailer-section h2 {
